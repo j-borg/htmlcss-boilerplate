@@ -1,0 +1,1 @@
+{"version":3,"file":"../mixins.css","sources":["mixins.scss"],"sourcesContent":["@mixin transition($transitions) {\n    -moz-transition: $transitions;\n      -o-transition: $transitions;\n     -ms-transition: $transitions;\n -webkit-transition: $transitions;\n         transition: $transitions;\n}"],"names":[],"mappings":""}
