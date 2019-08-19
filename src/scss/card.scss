@@ -1,0 +1,53 @@
+@import "_variables.scss";
+
+.card {
+  display: flex;
+
+  $this: &;
+
+  &--horizontal {
+    flex-direction: row;
+
+    #{$this}__header {
+      width: 200px;
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+
+    #{$this}__header {
+      height: 200px;
+    }
+  }
+
+  &__header {
+    background-size: cover;
+  }
+
+  &__content {
+    border: 1px solid $grey;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 100px;
+    padding: $margin;
+  }
+
+  &__title,
+  &__subtitle {
+    margin-bottom: $margin * 0.5;
+  }
+
+  &__subtitle {
+    font-size: 90%;
+  }
+
+  &__body {
+    margin-bottom: $margin;
+  }
+
+  &__link {
+    margin-top: auto;
+  }
+}

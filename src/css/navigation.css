@@ -1,0 +1,29 @@
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 20px; }
+
+.navigation__list-item {
+  flex: 1;
+  text-align: center; }
+
+.navigation__link {
+  border-bottom: 3px solid #eee;
+  color: #000;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .navigation__link.active {
+    border-color: blue;
+    color: blue; }
+  .navigation__link:hover:not(.active) {
+    border-color: #6666ff;
+    color: #6666ff; }
+
+/*# sourceMappingURL=maps/navigation.css.map */
