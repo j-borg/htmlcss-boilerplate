@@ -3,7 +3,7 @@
 .app-footer {
   background: $grey;
   margin-top: $margin;
-  padding: $margin 0;
+  padding: $padding 0;
 
   &__inner {
     justify-content: space-between;
@@ -16,6 +16,7 @@
   &__list-item {
   }
 
-  &__link {
+  .app-footer__link {
+    color: $black;
   }
 }

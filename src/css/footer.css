@@ -6,5 +6,7 @@
     justify-content: space-between; }
   .app-footer__list {
     list-style: none; }
+  .app-footer .app-footer__link {
+    color: #000; }
 
 /*# sourceMappingURL=maps/footer.css.map */

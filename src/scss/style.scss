@@ -17,24 +17,47 @@ h2 {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $header-font;
+}
+
+h1 {
+  font-size: 32px;
+
+  @include media-medium {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+
+  @include media-medium {
+    font-size: 24px;
+  }
 }
 
 p {
   line-height: 1.3;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: $primary-color;
   text-decoration: none;
 }
 
-a:active, a:focus, a:hover {
+a:active,
+a:focus,
+a:hover {
   color: lighten($primary-color, 10%);
   cursor: pointer;
   text-decoration: underline;
-  
+
   @include transition(color);
 }
 
@@ -46,8 +69,8 @@ ul {
 .container {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: $container-width;
-  padding: 0 $margin;
+  max-width: $bp-l;
+  padding: 0 $padding;
   position: relative;
   width: 100%;
 }
@@ -66,14 +89,18 @@ ul {
   &--two-columns {
     > div,
     > section {
-      width: calc((100% / 2) - (2 * #{$margin}));
+      @include media-medium {
+        width: calc((100% / 2) - (2 * #{$margin}));
+      }
     }
   }
 
   &--three-columns {
     > div,
     > section {
-      width: calc((100% / 3) - (2 * #{$margin}));
+      @include media-medium {
+        width: calc((100% / 3) - (2 * #{$margin}));
+      }
     }
   }
 }

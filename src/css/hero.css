@@ -2,6 +2,7 @@
   align-items: center;
   box-sizing: border-box;
   height: 400px;
+  margin-bottom: 20px;
   padding: 40px 0;
   position: relative; }
   .hero__image {
@@ -16,8 +17,6 @@
   .hero__title, .hero__subtitle {
     color: #fff;
     margin-bottom: 20px; }
-  .hero__title {
-    font-size: 48px; }
   .hero__subtitle {
     font-weight: 400; }
 

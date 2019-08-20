@@ -1,7 +1,21 @@
+@import "_variables";
+
 @mixin transition($transitions) {
     -moz-transition: $transitions 0.2s ease;
       -o-transition: $transitions 0.2s ease;
      -ms-transition: $transitions 0.2s ease;
  -webkit-transition: $transitions 0.2s ease;
          transition: $transitions 0.2s ease;
+}
+
+@mixin media-medium {
+  @media (min-width: $bp-m) {
+    @content;
+  }
+}
+
+@mixin media-large {
+  @media (min-width: $bp-l) {
+    @content;
+  }
 }
