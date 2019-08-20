@@ -1,13 +1,20 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
-@import "_mixins.scss";
-@import "_variables.scss";
+@import "fonts";
 
-@import "card.scss";
-@import "navigation.scss";
+@import "_helpers";
+@import "_mixins";
+@import "_variables";
+
+@import "button";
+@import "card";
+@import "footer";
+@import "header";
+@import "navigation";
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $primary-font;
 }
 
 p,
@@ -16,8 +23,24 @@ h2 {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: $header-font;
+}
+
 p {
   line-height: 1.3;
+}
+
+a, a:visited {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+a:active, a:focus, a:hover {
+  color: lighten($primary-color, 10%);
+  text-decoration: underline;
+  
+  @include transition(color 0.2s ease);
 }
 
 ul {

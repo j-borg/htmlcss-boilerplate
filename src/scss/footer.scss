@@ -1,0 +1,21 @@
+@import "_variables";
+
+.app-footer {
+  background: $grey;
+  margin-top: $margin;
+  padding: $margin 0;
+
+  &__inner {
+    justify-content: space-between;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+  }
+
+  &__link {
+  }
+}

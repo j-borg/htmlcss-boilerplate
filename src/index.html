@@ -19,8 +19,14 @@
 </head>
 
 <body>
+  <header class="app-header">
+    <div class="container">
+      <img class="app-header__logo" src="../images/logo.png" alt="Logo" />
+    </div>
+  </header>
+
   <nav class="container navigation">
-    <ul class="navigation__list">
+    <ul class="navigation__list flex">
       <li class="navigation__list-item">
         <a class="navigation__link active" href="/">Item 1</a>
       </li>
@@ -41,9 +47,12 @@
 
   <main class="container">
     <div class="row row--three-columns">
-      <section class="card card--vertical">
-        <header class="card__header" style="background-image: url(../images/card-image.jpg)"></header>
-        <div class="card__content">
+      <section class="card card--vertical flex flex--column">
+        <header class="card__header">
+          <img src="../images/card-image.jpg" alt="Image" />
+        </header>
+
+        <div class="card__content flex flex--column">
           <p class="card__subtitle">Card subtitle</p>
           <h2 class="card__title">Card title</h2>
           <p class="card__body">Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Praesent nec nisl a
@@ -52,9 +61,12 @@
         </div>
       </section>
 
-      <section class="card card--vertical">
-        <header class="card__header" style="background-image: url(../images/card-image.jpg)"></header>
-        <div class="card__content">
+      <section class="card card--vertical flex flex--column">
+        <header class="card__header">
+          <img src="../images/card-image.jpg" alt="Image" />
+        </header>
+
+        <div class="card__content flex flex--column">
           <p class="card__subtitle">Card subtitle</p>
           <h2 class="card__title">Card title</h2>
           <p class="card__body">Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing
@@ -63,9 +75,12 @@
         </div>
       </section>
 
-      <section class="card card--vertical">
-        <header class="card__header" style="background-image: url(../images/card-image.jpg)"></header>
-        <div class="card__content">
+      <section class="card card--vertical flex flex--column">
+        <header class="card__header">
+          <img src="../images/card-image.jpg" alt="Image" />
+        </header>
+
+        <div class="card__content flex flex--column">
           <p class="card__subtitle">Card subtitle</p>
           <h2 class="card__title">Card title</h2>
           <p class="card__body">Quisque ut nisi. Donec posuere vulputate arcu. Nulla facilisi. Praesent vestibulum
@@ -76,29 +91,84 @@
     </div>
 
     <div class="row row--two-columns">
-        <section class="card card--horizontal">
-          <header class="card__header" style="background-image: url(../images/card-image.jpg)"></header>
-          <div class="card__content">
-            <p class="card__subtitle">Card subtitle</p>
-            <h2 class="card__title">Card title</h2>
-            <p class="card__body">Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Praesent nec nisl a
-              purus blandit viverra.</p>
-            <a class="card__link" href="/">Lees meer</a>
-          </div>
-        </section>
-  
-        <section class="card card--horizontal">
-          <header class="card__header" style="background-image: url(../images/card-image.jpg)"></header>
-          <div class="card__content">
-            <p class="card__subtitle">Card subtitle</p>
-            <h2 class="card__title">Card title</h2>
-            <p class="card__body">Quisque ut nisi. Donec posuere vulputate arcu. Nulla facilisi. Praesent vestibulum
-              dapibus nibh. Fusce fermentum.</p>
-            <a class="card__link" href="/">Lees meer</a>
-          </div>
-        </section>
-      </div>
+      <section class="card card--horizontal flex flex--row">
+        <header class="card__header">
+          <img src="../images/card-image.jpg" alt="Image" />
+        </header>
+
+        <div class="card__content flex flex--column">
+          <p class="card__subtitle">Card subtitle</p>
+          <h2 class="card__title">Card title</h2>
+          <p class="card__body">Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Praesent nec nisl a
+            purus blandit viverra.</p>
+          <a class="card__link" href="/">Lees meer</a>
+        </div>
+      </section>
+
+      <section class="card card--horizontal flex flex--row">
+        <header class="card__header">
+          <img src="../images/card-image.jpg" alt="Image" />
+        </header>
+
+        <div class="card__content flex flex--column">
+          <p class="card__subtitle">Card subtitle</p>
+          <h2 class="card__title">Card title</h2>
+          <p class="card__body">Quisque ut nisi. Donec posuere vulputate arcu. Nulla facilisi. Praesent vestibulum
+            dapibus nibh. Fusce fermentum.</p>
+          <a class="card__link" href="/">Lees meer</a>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <footer class="app-footer">
+    <div class="app-footer__inner container flex flex--row">
+      <ul class="app-footer__list">
+        <Li class="app-footer__list-item">
+          <a class="app-footer__link" href="/">Link 1</a>
+        </Li>
+        <Li class="app-footer__list-item">
+          <a class="app-footer__link" href="/">Link 2</a>
+        </Li>
+        <Li class="app-footer__list-item">
+          <a class="app-footer__link" href="/">Link 3</a>
+        </Li>
+        <Li class="app-footer__list-item">
+          <a class="app-footer__link" href="/">Link 4</a>
+        </Li>
+      </ul>
+
+      <ul class="app-footer__list">
+        <Li class="app-footer__list-item">
+          <a class="app-footer__link" href="/">Link 5</a>
+        </Li>
+        <Li class="app-footer__list-item">
+          <a class="app-footer__link" href="/">Link 6</a>
+        </Li>
+        <Li class="app-footer__list-item">
+          <a class="app-footer__link" href="/">Link 7</a>
+        </Li>
+        <Li class="app-footer__list-item">
+          <a class="app-footer__link" href="/">Link 8</a>
+        </Li>
+      </ul>
+
+      <ul class="app-footer__list">
+          <Li class="app-footer__list-item">
+            <a class="app-footer__link" href="/">Link 9</a>
+          </Li>
+          <Li class="app-footer__list-item">
+            <a class="app-footer__link" href="/">Link 10</a>
+          </Li>
+          <Li class="app-footer__list-item">
+            <a class="app-footer__link" href="/">Link 11</a>
+          </Li>
+          <Li class="app-footer__list-item">
+            <a class="app-footer__link" href="/">Link 12</a>
+          </Li>
+        </ul>
+    </div>
+  </footer>
 </body>
 
 </html>

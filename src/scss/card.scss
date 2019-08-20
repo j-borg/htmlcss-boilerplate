@@ -1,35 +1,36 @@
 @import "_variables.scss";
 
 .card {
-  display: flex;
-
   $this: &;
 
   &--horizontal {
-    flex-direction: row;
-
     #{$this}__header {
-      width: 200px;
+      img {
+        height: 100%;
+        width: 200px;
+      }
     }
   }
 
   &--vertical {
-    flex-direction: column;
-
     #{$this}__header {
-      height: 200px;
+      img {
+        height: 200px;
+        width: 100%;
+      }
     }
   }
 
   &__header {
-    background-size: cover;
+    img {
+      display: block;
+      object-fit: cover;
+    }
   }
 
   &__content {
     border: 1px solid $grey;
-    display: flex;
     flex: 1;
-    flex-direction: column;
     min-height: 100px;
     padding: $margin;
   }

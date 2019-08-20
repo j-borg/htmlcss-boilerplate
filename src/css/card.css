@@ -1,29 +1,31 @@
-.card {
-  display: flex; }
-  .card--horizontal {
-    flex-direction: row; }
-    .card--horizontal .card__header {
-      width: 200px; }
-  .card--vertical {
-    flex-direction: column; }
-    .card--vertical .card__header {
-      height: 200px; }
-  .card__header {
-    background-size: cover; }
-  .card__content {
-    border: 1px solid #eee;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    min-height: 100px;
-    padding: 20px; }
-  .card__title, .card__subtitle {
-    margin-bottom: 10px; }
-  .card__subtitle {
-    font-size: 90%; }
-  .card__body {
-    margin-bottom: 20px; }
-  .card__link {
-    margin-top: auto; }
+.card--horizontal .card__header img {
+  height: 100%;
+  width: 200px; }
+
+.card--vertical .card__header img {
+  height: 200px;
+  width: 100%; }
+
+.card__header img {
+  display: block;
+  object-fit: cover; }
+
+.card__content {
+  border: 1px solid #eee;
+  flex: 1;
+  min-height: 100px;
+  padding: 20px; }
+
+.card__title, .card__subtitle {
+  margin-bottom: 10px; }
+
+.card__subtitle {
+  font-size: 90%; }
+
+.card__body {
+  margin-bottom: 20px; }
+
+.card__link {
+  margin-top: auto; }
 
 /*# sourceMappingURL=maps/card.css.map */

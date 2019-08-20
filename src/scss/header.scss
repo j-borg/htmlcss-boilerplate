@@ -1,0 +1,10 @@
+@import "_variables";
+
+.app-header {
+  background: $grey;
+  padding: $margin 0;
+
+  &__logo {
+    height: 30px;
+  }
+}

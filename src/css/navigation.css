@@ -1,5 +1,4 @@
 .navigation__list {
-  display: flex;
   justify-content: space-between;
   list-style: none;
   margin-bottom: 20px; }
@@ -20,10 +19,10 @@
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .navigation__link.active {
-    border-color: blue;
-    color: blue; }
+    border-color: #d71487;
+    color: #d71487; }
   .navigation__link:hover:not(.active) {
-    border-color: #6666ff;
-    color: #6666ff; }
+    border-color: #f061b5;
+    color: #f061b5; }
 
 /*# sourceMappingURL=maps/navigation.css.map */

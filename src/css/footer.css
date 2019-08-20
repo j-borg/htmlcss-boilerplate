@@ -1,0 +1,10 @@
+.app-footer {
+  background: #eee;
+  margin-top: 20px;
+  padding: 20px 0; }
+  .app-footer__inner {
+    justify-content: space-between; }
+  .app-footer__list {
+    list-style: none; }
+
+/*# sourceMappingURL=maps/footer.css.map */
