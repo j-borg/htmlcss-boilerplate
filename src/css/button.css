@@ -1,2 +1,24 @@
+a.button, button {
+  background: #d71487;
+  border-radius: 3px;
+  color: #fff;
+  padding: 20px;
+  min-width: 150px;
+  text-align: center;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  a.button:hover, button:hover {
+    background: #a8106a;
+    color: rgba(255, 255, 255, 0.1);
+    text-decoration: none; }
+  a.button--inverted, button--inverted {
+    background: #fff;
+    color: #d71487; }
+    a.button--inverted:hover, button--inverted:hover {
+      background: #f1f1f1;
+      color: #a8106a; }
 
 /*# sourceMappingURL=maps/button.css.map */

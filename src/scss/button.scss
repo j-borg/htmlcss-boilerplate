@@ -1,2 +1,29 @@
-.button {
+@import "mixins";
+@import "variables";
+
+a.button, button {
+  background: $primary-color;
+  border-radius: 3px;
+  color: #fff;
+  padding: $margin;
+  min-width: 150px;
+  text-align: center;
+
+  @include transition(all);
+
+  &:hover {
+    background: darken($primary-color, 10%);
+    color: rgba(255,255,255, 0.1);
+    text-decoration: none;
+  }
+
+  &--inverted {
+    background: #fff;
+    color: $primary-color;
+
+    &:hover {
+      background: #f1f1f1;
+      color: darken($primary-color, 10%);
+    }
+  }
 }

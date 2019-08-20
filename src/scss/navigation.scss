@@ -20,7 +20,7 @@
     padding: $margin;
     text-decoration: none;
 
-    @include transition(all 0.2s ease);
+    @include transition(all);
 
     &.active {
       border-color: $primary-color;
@@ -28,8 +28,8 @@
     }
 
     &:hover:not(.active) {
-      border-color: lighten($primary-color, 20%);
-      color: lighten($primary-color, 20%);
+      border-color: darken($primary-color, 10%);
+      color: darken($primary-color, 10%);
     }
   }
 }

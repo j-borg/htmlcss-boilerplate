@@ -1,17 +1,11 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
-@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; // https://fontawesome.com/icons?d=gallery&m=free
 
 @import "fonts";
 
 @import "_helpers";
 @import "_mixins";
 @import "_variables";
-
-@import "button";
-@import "card";
-@import "footer";
-@import "header";
-@import "navigation";
 
 body {
   font-family: $primary-font;
@@ -38,9 +32,10 @@ a, a:visited {
 
 a:active, a:focus, a:hover {
   color: lighten($primary-color, 10%);
+  cursor: pointer;
   text-decoration: underline;
   
-  @include transition(color 0.2s ease);
+  @include transition(color);
 }
 
 ul {
@@ -82,3 +77,10 @@ ul {
     }
   }
 }
+
+@import "button";
+@import "card";
+@import "footer";
+@import "header";
+@import "hero";
+@import "navigation";
