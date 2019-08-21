@@ -1,11 +1,11 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
-@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; // https://fontawesome.com/icons?d=gallery&m=free
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
-@import "fonts";
+@import "./styles/fonts";
 
-@import "_helpers";
-@import "_mixins";
-@import "_variables";
+@import "./styles/_helpers";
+@import "./styles/_mixins";
+@import "./styles/_variables";
 
 body {
   font-family: $primary-font;
@@ -105,9 +105,10 @@ ul {
   }
 }
 
-@import "button";
-@import "card";
-@import "footer";
-@import "header";
-@import "hero";
-@import "navigation";
+@import "./styles/button";
+@import "./styles/card";
+@import "./styles/footer";
+@import "./styles/header";
+@import "./styles/hero";
+@import "./styles/navigation";
+
