@@ -1,6 +1,3 @@
-@import "_mixins.scss";
-@import "_variables.scss";
-
 .navigation {
   &__list {
     justify-content: space-between;
@@ -25,6 +22,10 @@
     &.active {
       border-color: $primary-color;
       color: $primary-color;
+    }
+
+    &:hover {
+      text-decoration: none;
     }
 
     &:hover:not(.active) {

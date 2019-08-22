@@ -1,0 +1,98 @@
+form {
+  margin: $margin 0;
+  overflow: hidden;
+}
+
+.input-group {
+  margin-bottom: $margin;
+  position: relative;
+
+  label {
+    order: 2;
+  }
+  input {
+    order: 3;
+
+    &[type="checkbox"] {
+      order: 1;
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  appearance: none;
+  border: 1px solid darken($grey, 5%);
+  box-sizing: border-box;
+  display: inline-block;
+  outline: none;
+  padding: $padding;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    margin-bottom: $margin;
+    padding-left: $margin * 1.75;
+
+    &:before {
+      background: $grey;
+      border-radius: 3px;
+      content: "";
+      height: $margin;
+      margin-right: $margin * 0.5;
+      left: 0;
+      position: absolute;
+      width: $margin;
+
+      @include transition(all);
+    }
+  }
+
+  &:hover + label:before {
+    background: darken($grey, 5%);
+  }
+
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba($primary-color, 0.12);
+  }
+
+  &:checked + label:before {
+    background: $primary-color;
+  }
+
+  &:disabled + label {
+    color: $grey;
+    cursor: auto;
+  }
+
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  &:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: #fff;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 #fff, 4px 0 0 #fff, 4px -2px 0 #fff, 4px -4px 0 #fff, 4px -6px 0 #fff, 4px -8px 0 #fff;
+    transform: rotate(45deg);
+  }
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: $margin * 0.25;
+}

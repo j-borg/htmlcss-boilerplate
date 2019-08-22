@@ -82,32 +82,16 @@ ul {
 
   > div,
   > section {
+    flex-basis: 0;
     flex-grow: 1;
     margin: $margin;
-  }
-
-  &--two-columns {
-    > div,
-    > section {
-      @include media-medium {
-        width: calc((100% / 2) - (2 * #{$margin}));
-      }
-    }
-  }
-
-  &--three-columns {
-    > div,
-    > section {
-      @include media-medium {
-        width: calc((100% / 3) - (2 * #{$margin}));
-      }
-    }
   }
 }
 
 @import "./styles/button";
 @import "./styles/card";
 @import "./styles/footer";
+@import "./styles/form";
 @import "./styles/header";
 @import "./styles/hero";
 @import "./styles/navigation";
