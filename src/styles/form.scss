@@ -1,6 +1,5 @@
 form {
   margin: $margin 0;
-  overflow: hidden;
 }
 
 .input-group {
@@ -26,8 +25,17 @@ input[type="number"] {
   border: 1px solid darken($grey, 5%);
   box-sizing: border-box;
   display: inline-block;
+  line-height: $margin * 2.5;
   outline: none;
-  padding: $padding;
+  padding: 0 $padding;
+
+  @include transition(all);
+
+  &:hover {
+    border-color: $primary-color;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+  }
 }
 
 input[type="checkbox"] {

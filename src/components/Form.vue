@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form class="clear">
     <div class="input-group flex flex--column">
       <label for="text">Text</label>
       <input type="text" id="text" placeholder="Text" />
@@ -11,8 +11,8 @@
     </div>
 
     <div class="input-group flex flex--column">
-      <label for="email">Number</label>
-      <input type="number" placeholder="Getal" />
+      <label for="number">Number</label>
+      <input type="number" id="number" placeholder="Getal" />
     </div>
 
     <div class="input-group">
